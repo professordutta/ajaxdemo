@@ -1,0 +1,43 @@
+*{
+	margin:0px;
+	font-family: 'Roboto';
+}
+
+.header h1 {
+	padding: 10px;
+}
+.milk-container{
+	display: flex;
+	flex-direction:row;
+	align-items: center;
+	margin-left: 120px;
+	margin-right: 120px;
+	margin-top: 30px;
+	margin-bottom: 30px;
+	justify-content: space-between;
+}
+
+.milk-products{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	margin-bottom: 20px;
+}
+
+.milk-container > .milk-products #price1, #price2, #price3{
+	font-size: 1.8em;
+	background-color: #00b16a;
+	color: #FFFFFF;
+	padding: 8px;
+	margin-top: 40px;
+}
+
+@media screen and (max-width: 768px) {
+.milk-container{
+	flex-direction: column;
+}
+.milk-container > .milk-products #price1, #price2, #price3{
+	font-size: 1.2em;
+}
+
+}
